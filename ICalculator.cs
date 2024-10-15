@@ -31,6 +31,5 @@
     /// Takes input from the user and sends them to the appropriate method in the Calculator class.
     /// If the user inputs 5, the program will exit.
     /// </summary>
-    /// <param name="exit"></param>
-    public void UserInput(bool exit);
+    public void UserInput();
 }

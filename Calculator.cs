@@ -55,9 +55,9 @@ public class Calculator : ICalculator
         Console.ReadKey();
     }
 
-    public void UserInput(bool exit)
+    public void UserInput()
     {
-        while (!exit)
+        while (!Exit)
         {
             Console.Clear();
             Console.WriteLine("Calculator");
@@ -81,7 +81,7 @@ public class Calculator : ICalculator
                     DivideNumbers();
                     break;
                 case "5":
-                    exit = true;
+                    Exit = true;
                     break;
             }
         }

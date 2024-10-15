@@ -8,7 +8,7 @@ namespace Kalkulator
         static void Main(string[] args)
         {
             Calculator calculator = new() { Exit = false };
-            calculator.UserInput(calculator.Exit);
+            calculator.UserInput();
         }
     }
 }
