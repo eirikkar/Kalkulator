@@ -27,10 +27,10 @@
     public void DivideNumbers();
 
     /// <summary>
+    /// Prints a menu to the console and asks the user to choose an option.
     /// Takes input from the user and sends them to the appropriate method in the Calculator class.
     /// If the user inputs 5, the program will exit.
     /// </summary>
     /// <param name="exit"></param>
-    /// <returns>bool exit</returns>
-    public bool UserInput(bool exit);
+    public void UserInput(bool exit);
 }

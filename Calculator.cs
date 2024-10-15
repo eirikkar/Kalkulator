@@ -55,26 +55,35 @@ public class Calculator : ICalculator
         Console.ReadKey();
     }
 
-    public bool UserInput(bool exit)
+    public void UserInput(bool exit)
     {
-        switch (Console.ReadLine())
+        while (!exit)
         {
-            case "1":
-                AddNumbers();
-                break;
-            case "2":
-                SubtractNumbers();
-                break;
-            case "3":
-                MultiplyNumbers();
-                break;
-            case "4":
-                DivideNumbers();
-                break;
-            case "5":
-                exit = true;
-                break;
+            Console.Clear();
+            Console.WriteLine("Calculator");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Subtract");
+            Console.WriteLine("3. Multiply");
+            Console.WriteLine("4. Divide");
+            Console.WriteLine("5. Exit");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    AddNumbers();
+                    break;
+                case "2":
+                    SubtractNumbers();
+                    break;
+                case "3":
+                    MultiplyNumbers();
+                    break;
+                case "4":
+                    DivideNumbers();
+                    break;
+                case "5":
+                    exit = true;
+                    break;
+            }
         }
-        return exit;
     }
 }
