@@ -1,7 +1,5 @@
 public class Calculator : ICalculator
 {
-    public bool Exit { get; set; }
-
     public double WriteNumber()
     {
         while (true)
@@ -57,6 +55,7 @@ public class Calculator : ICalculator
 
     public void UserInput()
     {
+        bool Exit = false;
         while (!Exit)
         {
             Console.Clear();
